@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <title>Predecem</title>
+</head>
+<style>
+  
+
+.t1{
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+}
+
+.start{
+    
+    background-color: black;
+    padding:8rem;
+    padding-top: 100px;
+    padding-bottom: 190px;
+}
+
+.t2{
+    color:aliceblue;
+}
+
+
+
+.nav a{
+    position:relative;
+    font-size:1.1em;
+    font-weight:500;
+    color:#333;
+    text-decoration:none;
+    padding:6px 20px;
+    transition: .5s;
+}
+
+.nav a:hover{
+    color:#0ef;
+}
+
+.nav a span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    border-bottom:2px solid #0ef;
+    border-radius:15px;
+    transform:scale(0) translateY(50px);
+    opacity:0;
+    transition:.5s;
+}
+
+.nav a:hover span{
+    transform: scale(1) translateY(0);
+    opacity:1;
+}
+</style>
+<body>
+    <!--Header--> 
+    
+    <header class="t1 d-flex flex-wrap justify-content-center py-3  ">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"><br><br>
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Simple header</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+
+          <li class="nav-item"><a href="#" class="nav-link " aria-current="page">Home<span></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Features<span></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing<span></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs<span></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About<span></span></a></li>
+        </ul>
+      </header>
+    <!--Header--> 
+    <div class="start">
+    <!--Title-->
+    <div class="title px-4 py-5 my-5 text-center">
+        
+            
+            <h1 class="t2 display-5 fw-bold ">PREDECEM</h1>
+
+      </div>
+    <!--Title-->
+    </div>
+
+    <!--Redirection-->
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure optio unde, blanditiis exercitationem, pariatur eos modi soluta nulla mollitia voluptatibus? Iusto corporis quod commodi! Voluptate ipsam veniam aspernatur fuga.</p>
+      <br>
+      <br>
+      <br>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="/predict">Predict</a> 
+        
+      </div>
+      
+    </div>
+    <br>
+      <br>
+      <br>
+    <!--Redirection-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

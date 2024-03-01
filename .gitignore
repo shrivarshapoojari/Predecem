@@ -1,0 +1,47 @@
+# Flask related
+__pycache__/
+instance/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+# Ignore all files and directories under Lib
+Lib/*
+
+# Logs
+*.log
+
+# Cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Compiled files
+*.pyc
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.userosscache
+
+# Miscellaneous
+*.DS_Store
+Thumbs.db

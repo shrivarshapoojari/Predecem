@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000102;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           min-height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            width: 48%; /* Adjust as needed */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result
+        {
+            background-color: #fff;
+            border: 3px solid black;
+            border-radius: 15px;
+            
+            margin: 10px;
+        }
+    </style>
+      
+</head>
+
+<body>
+   <div class="container">
+
+   
+    <form action="{{ url_for('predict')}}"method="post">
+        <h2>Concrete Properties</h2>
+
+        <div class="column">
+             
+
+            <label for="Cement">Cement (kg/m3)</label>
+            <input type="number" id="cem1" name="cem1" required>
+
+            <label for="bfs">Blast Furnace Slag (kg/m3)</label>
+            <input type="number" id="cem2" name="cem2" required>
+
+            <label for="fa">Fly Ash (kg/m3)</label>
+            <input type="number" id="cem3" name="cem3" required>
+
+            <label for="water">Water (kg/m3)</label>
+            <input type="number" id="cem4" name="cem4" required>
+
+            
+        </div>
+
+        <div class="column">
+            <label for="sp">Superplasticizer (kg/m3)</label>
+            <input type="number" id="cem5" name="cem5" required>
+
+            <label for="ca">Coarse Aggregate (kg/m3)</label>
+            <input type="number" id="cem6" name="cem6" required>
+
+            <label for="finea">Fine Aggregate (kg/m3)</label>
+            <input type="number" id="cem7" name="cem7" required>
+
+            <label for="age">Age (days)</label>
+            <input type="number" id="cem8" name="cem8" required>
+
+            
+
+             
+        </div>
+
+        <button type="submit" >Submit</button>
+        <a href="/">Go Back</a>
+        
+</form>
+    <div class="result"  id="result" >
+        <p style="padding-left: 30%;" >Predicted Concrete Strength is  {{strength}}  </p>
+       
+    </div>
+</div>
+
+</body>
+ 
+</html>
